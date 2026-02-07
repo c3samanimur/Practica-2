@@ -1,0 +1,8 @@
+dmunuera#123456#David Munuera Sanchez#12345678A#dmunuera@gmail.com#Calle Falsa, 123#18/09/1988#user
+dave#654321#Dave M Sanchez#87654321A#davems@gmail.com#Calle Falsa, 123#12/11/1955#user
+basimg#bmg123#Basilio Mateo Gabaldón#58454479W#basiliogabaldon@gmail.com#calle estacion de Lorca número 2#20/07/2007#user
+Nicolas Maduro#maduro#Nicolas Maduro#87623345N#nicolas@gmail.com#calle Estados Unidos#12/08/1999#user
+null#null#basilio#null#basbsabsd@#sdsad#20/07/2007#user
+julito#maraña#julian maraña#null#sadadads#asdadad#12211221#user
+
+perico#martinez#perico martinez como el de las madalenas#null#asdadasdadad#asdadsasdadas#adadadadad#user

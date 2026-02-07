@@ -1,0 +1,14 @@
+#Ignorar configuracion de eclipse
+.metadata/
+
+#Ignorar archivos de configuracion
+.settings/
+.project
+.classpath
+
+#Ignorar carpetas de compilacion
+bin/
+target/
+
+#Ignorar comprimidos
+*.zip

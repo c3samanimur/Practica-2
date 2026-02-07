@@ -1,0 +1,5 @@
+P01#Auriculares Bluetooth#25.50#10
+P02#Raton Gaming#15.00#5
+P03#Teclado Mecanico#45.99#8
+P04#Monitor 24p#120.00#3
+P05#Alfombrilla XL#10.00#20

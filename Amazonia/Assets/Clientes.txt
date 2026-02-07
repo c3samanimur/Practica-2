@@ -1,0 +1,4 @@
+C01#Juan Lopez#50.00
+C02#Maria Garcia#200.00
+C03#Pedro Ramirez#30.00
+C04#Lucia Fernandez#100.00

@@ -1,0 +1,5 @@
+[2026-02-05] user: @Juan_Perez! IP: 192.168.1.15 level: INFO
+[05-02-2026] user: %Marta89% IP: 10.0.0.1 level: ERROR
+[2026/02/05] user: #Admin_Root# IP: 172.16.254.1 level: CRITICAL
+[05/02/2026] user: !Invitado_22! IP: 192.168.1.100 level: WARNING
+[2026-02-05] user: @Juan_Perez! IP: 192.168.1.15 level: ERROR
