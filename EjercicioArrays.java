@@ -1,4 +1,5 @@
 package ProblemaArray;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,6 +11,7 @@ public class EjercicioArrays {
         int[] control = new int[numAlumnos];
         int maxNota = 0;
         int minNota = 0;
+        float[] calificaciones = new float[numAlumnos];
         
         //Genera notas random entre 1 y 10
         for(int i=0; i < control.length; i++){
@@ -17,24 +19,26 @@ public class EjercicioArrays {
         }
         
         buscarMayorMenor(maxNota, minNota, control);
-        //El numero de lista es (i + 1)
-      
         
+        listaNotas(calificaciones);
+       
+
+      
+         
         //Empezamos el uso de listas para facilitar la tarea de índices.
         List notas = Arrays.asList(control);
-        indMinNota = notas.indexOf(minNota) + 1;
-        indMaxNota = notas.indexOf(maxNota) + 1;
+         int indMinNota = notas.indexOf(minNota) + 1;
+         int indMaxNota = notas.indexOf(maxNota) + 1;
 
         //Comprobamos el resultado del ejercicio   
         System.out.println("Mínimo es: " + minNota);
         System.out.println("Máximo es: " + maxNota);
         System.out.println("Indice del mínimo es : " + indMinNota);
         System.out.println("Indice del máximo es : " + indMaxNota);
-        System.out.println("Lista de clase :" + Arrays.toString(listaClase));
         System.out.println("Array de Notas :" + notas);
         
         //creamos el array de notas "practicas"
-        practicas = new int[numAlumnos];
+       int[] practicas = new int[numAlumnos];
         for(int i=0; i < practicas.length; i++){
             practicas[i] = (int)(Math.random()*11);
         }
@@ -51,7 +55,7 @@ public class EjercicioArrays {
         
         //Sacamos la estadística de calificaciones
         //hacemos un array de 10 para la estadística.
-        estadistica = new float[10];
+        float [] estadistica = new float[10];
       
         for (int i=0; i<10; i++){
             float count = 0;
@@ -70,56 +74,13 @@ public class EjercicioArrays {
                 + (i+1) + " = " 
                 + sol + "%");
         }
-        //Aprobados y suspensos
-        aprobados = new int[numAlumnos];
-        suspensos = new int[numAlumnos];
-        int countAprobados = 0;
-        int countSuspensos = 0;
-        for (int i=0; i<numAlumnos; i++){
-            if (calificaciones[i] < 5){
-                aprobados[i] = i;
-                countAprobados += 1;
-            }else{ 
-                suspensos[i] = i;
-                countSuspensos += 1;
-            }
-        }        
-        System.out.println("Relación de aprobados por nº de lista: " 
-                + Arrays.toString(aprobados));
-        System.out.println("Relación de suspensos por nº de lista: " 
-                + Arrays.toString(suspensos));
-        //Resumen de aprobados y suspensos
-        int i = 0;
-        int x = 0;
-        int[] a = new int[countAprobados];
-        int[] s = new int[countSuspensos];
-        while(i < aprobados.length){
-            if(aprobados[i] != 0){
-                a[x] = aprobados[i];
-                i++;
-                x++;
-            }else{ i++; }
-        }
         
-        i = x = 0;
-        while(i < suspensos.length){
-            if(suspensos[i] != 0){
-                s[x] = suspensos[i];
-                i++;
-                x++;
-            }else{ i++; }
-        }
-        System.out.println("Resumen  de aprobados por nº de lista: " 
-                + Arrays.toString(a));
-        System.out.println("Resumen  de aprobados por nº de lista: " 
-                + Arrays.toString(s));
-    
         /*6. Suponer un vector de Calificaciones de tamaño 40 
         (máximo de alumnos por clase), pero que solo almacena las
         notas de 31 alumnos. Realizar un programa que permita insertar en
         la posición 4 del vector la calificación de un nuevo 
         alumno en clase al que supuestamente le corresponde como nota un 6.*/
-        calif = new double[40];
+        double[] calif = new double[40];
         for (int j=0; j<31; j++){
             calif[j] = (int)(Math.random()*11);
         }
@@ -135,5 +96,21 @@ public class EjercicioArrays {
     	for(int i = 0; i < control.length; i++) {
     		
     	}
+    }
+    public static void listaNotas(float[] calificaciones) {
+    	ArrayList<Integer> listaApro = new ArrayList<>();
+        ArrayList<Integer> listaSusp = new ArrayList<>();
+        
+        for (int j = 0; j < calificaciones.length; j++) {
+            
+            if (calificaciones[j] >= 5) {
+                listaApro.add(j + 1); 
+            } else {
+                listaSusp.add(j + 1);
+            }
+        }
+        System.out.println("Aprobados (nº lista): " + listaApro);
+        System.out.println("Suspensos (nº lista): " + listaSusp);
+        
     }
 }
