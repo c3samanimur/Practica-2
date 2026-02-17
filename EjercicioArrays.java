@@ -18,6 +18,7 @@ public class EjercicioArrays {
         
         buscarMayorMenor(maxNota, minNota, control);
         //El numero de lista es (i + 1)
+      
         
         //Empezamos el uso de listas para facilitar la tarea de índices.
         List notas = Arrays.asList(control);
